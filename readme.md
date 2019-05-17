@@ -17,8 +17,6 @@ CREATE TABLE IF NOT EXISTS store_user (
     id integer DEFAULT nextval('user_id'::regclass) PRIMARY KEY
 );
 
--- Indices -------------------------------------------------------
-
 CREATE UNIQUE INDEX store_user_pkey ON store_user(id int4_ops);
 CREATE UNIQUE INDEX store_user_username_key ON store_user(username text_ops);
 ```
